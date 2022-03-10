@@ -2,7 +2,7 @@
 <html lang="en" class="h-100">
 
 <head>
-    <title>App Name: A Coding Project By Joshua Wells</title>
+    <title>RADAR: A Coding Project By Joshua Wells</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -21,7 +21,7 @@
     <nav class="navbar navbar-expand-md navbar-dark fixed-top gx-2">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"> <img src="img/codedbywellslogoonly.svg" class="d-inline-block align-text-top"
-                width="30" height="24" alt="Logo"> APP NAME</a>
+                width="30" height="24" alt="Logo"> RADAR</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
                 aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -49,7 +49,46 @@
     </nav>
     <!--Main Section-->
     <main class="flex-shrink-0">
-        <div class="container">
+        <div class="container mt-5">
+            <div class="row ">
+                <div class="col  gx-4">
+                    <h3>RADAR: A Coding Project </h3>
+                    <h4 class="lead">Radar is an application that checks if an entered word or phrase is a palindrome. A palindrome is a word, phrase, or sequence that reads the same forward and backward. Write a program that checks if the phrase entered is a palindrome. </h4>
+                    <hr>
+                    <div class="row">
+                        <div class="col">
+                            <h2>Instructions:</h2>
+                            <h4 class="lead">Enter a word, phrase, or sequence to determine if it is a palindrome.
+                                Special characters(!@#$ etc.) and spaces will be ignored when determining if input is a palindrome. 
+                            </h4>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col border-start">
+                    <h5>Enter a word, sentence, or phrase:</h5>
+                    <div class="row gx-2">
+                        <input id="palindromeString" type="text" class="form-control" placeholder="Enter a word, phrase, or sequence" aria-label="Enter a word, phrase, or sequence">
+                        <div class="col-12 mt-2 d-flex justify-content-end">
+                            <button type="button" id="btnSubmit" class="btn btn-danger btn-lg">Am I A Palindrome?</button>
+                        </div>
+                        <div class="alert invisible fade show" id="alert" role="alert">
+                            <h2 class="mb-0" id="h2Heading">
+                                <!--Insert heading here-->
+                            </h2>
+                            <hr>
+                        </div>
+                        <div class="alert alert-danger invisible fade show" id="para" role="alert">
+                            <p class="mb-0 mt-0" id="">
+                                <!--Insert text here-->
+                            </p>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
 
         </div>
     </main>
@@ -84,6 +123,9 @@
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
     </script>
     <script src="/js/site.js"></script>
+    <script>
+        document.getElementById("btnSubmit").addEventListener("click",getValues);
+    </script>
 
 </body>
 </html>
